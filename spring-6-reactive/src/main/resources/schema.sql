@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS beers (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    style VARCHAR(255) NOT NULL,
+    upc VARCHAR(25) NOT NULL,
+    quantity_on_hand INTEGER,
+    price DECIMAL(38,2) NOT NULL,
+    created_date TIMESTAMP NOT NULL,
+    last_modified_date TIMESTAMP NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS customers (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    created_date TIMESTAMP NOT NULL,
+    last_modified_date TIMESTAMP NOT NULL
+);
